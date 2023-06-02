@@ -45,6 +45,13 @@ header {
   margin-left: 16.375rem;
 }
 
+.section3,
+.section4,
+.section5,
+.minisec {
+  padding-top: 4rem;
+}
+
 /* section 1 */
 
 .section1 {
@@ -118,6 +125,13 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 3.75rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.section1 .btn:hover {
+  transition: 0.5s;
+  background: #cfcece;
 }
 
 .section1 .btn a {
@@ -161,6 +175,11 @@ header {
   margin-left: 0.5rem;
 }
 
+.center {
+  width: 47rem;
+  height: 30rem;
+}
+
 /* .img_elem:last-child{
   grid-template-columns: 0px;
 } */
@@ -192,11 +211,7 @@ header {
 .background_picture {
   background: url(/img/81ded9cceb38ed3d73dfb9cbbabec2d1\ 1.png);
   width: 119rem;
-  height: 198.5625rem;
-}
-
-.section3 {
-  padding-top: 4.5rem;
+  height: 180rem;
 }
 
 .slider {
@@ -205,15 +220,6 @@ header {
   justify-content: space-around;
 }
 
-.left,
-.right {
-  margin-top: 3.125rem;
-  width: 12.0625rem;
-  height: 27.5rem;
-}
-
-.left,
-.right,
 .arrow_left,
 .arrow_right {
   cursor: pointer;
@@ -222,26 +228,33 @@ header {
 .arrow_left,
 .arrow_right {
   position: absolute;
-  width: 7.75rem;
-  height: 7.75rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .arrow_right {
-  margin-top: 13rem;
-  margin-left: 93rem;
+  margin-top: 14rem;
+  margin-left: 92rem;
 }
 
 .arrow_left {
-  margin-top: 13rem;
-  margin-right: 93rem;
+  margin-top: 14rem;
+  margin-right: 92rem;
+}
+
+.section3 .left,
+.section3 .right {
+  margin-top: 4rem;
+  width: 9rem;
+  height: 23rem;
 }
 
 .section3 .prog {
-  width: 49.6875rem;
+  width: 44rem;
   height: 1.8125rem;
   background: #d0cce2;
   border-radius: 2.1875rem;
-  margin-left: 35rem;
+  margin-left: 37rem;
   margin-top: 2rem;
 }
 
@@ -252,10 +265,6 @@ header {
 }
 
 /* section 4 */
-
-.section4 {
-  padding-top: 4.5rem;
-}
 
 .section4 .navbar {
   display: flex;
@@ -269,10 +278,11 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 18.3rem;
-  height: 6.7rem;
+  width: 17.3rem;
+  height: 6rem;
   background: #d0cce3;
   border: 0.0625rem #d0cce3 solid;
+  transition: 1.5s;
 }
 
 .section4 .nav_effect p {
@@ -312,10 +322,12 @@ header {
 
 .tab_item.active {
   display: block;
+  transition: 2s;
 }
 
 .tab_item {
   display: none;
+  transition: 2s;
 }
 
 .section4 .conetent_tab {
@@ -323,18 +335,23 @@ header {
   display: flex;
   justify-content: center;
   gap: 4.375rem;
+  transition: 2s;
 }
 
 .section4 .contbox {
   gap: 1.875rem;
-  width: 26.5625rem;
-  height: 42.5rem;
+  width: 23.5625rem;
+  height: 38.5rem;
   background: #ffffff;
   border-radius: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.section4 .contbox img {
+  width: 23.5625rem;
 }
 
 .section4 .contbox h3 {
@@ -352,18 +369,14 @@ header {
 
 /* section 5 */
 
-.section5 {
-  padding-top: 4.5rem;
-}
-
-.section5 .navbar {
+ .navbar {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-top: 3.75rem;
+  padding-top: 1.8rem;
 }
 
-.section5 .nav_effect {
+ .nav_effecti {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -374,39 +387,59 @@ header {
   cursor: pointer;
 }
 
-.section5 .nav_effect p {
+ .nav_effecti p {
   font-weight: 400;
   font-size: 2rem;
   color: black;
   cursor: pointer;
 }
 
-.section5 .nav_effect:first-child {
+ .nav_effecti:first-child {
   border-radius: 6.3125rem 0 0 6.3125rem;
 }
 
-.section5 .nav_effect:last-child {
+ .nav_effecti:last-child {
   border-radius: 0 6.3125rem 6.3125rem 0;
 }
 
-.section5 .nav_effect:hover {
+ .nav_effecti:hover {
   transition: 1.5s;
   background: #6e7ab4;
 }
 
-.section5 .nav_effect:hover p {
+ .nav_effecti:hover p {
   transition: 1.5s;
   color: white;
 }
 
-.section5 .content {
-  width: 85.9375rem;
-  height: 42.5rem;
+.content{
+  display: none;
+}
+
+.content.activ{
+  width: 69.9375rem;
+  height: 35.5rem;
   background: #ffffff;
   border-radius: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content.activ img{
+  width: 1rem;
+  height: 1rem;
+  width: 40rem;
+  height: 33rem;
+}
+
+.nav_effecti.activ {
+  background: #6e7ab4;
+  border: 0.0625rem #6e7ab4 solid;
+}
+
+.nav_effecti.activ p {
+  color: white;
 }
 
 .arrow_left1,
@@ -415,21 +448,12 @@ header {
   height: 7.75rem;
 }
 
-.section5 .prog {
-  width: 49.6875rem;
-  height: 1.8125rem;
-  background: #d0cce2;
-  border-radius: 2.1875rem;
-}
 
 .section5 .conteyner {
   margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.section5 .slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,10 +461,6 @@ header {
 }
 
 /* section 6 */
-
-.minisec {
-  padding-top: 4.5rem;
-}
 
 .obyed {
   padding-top: 9.375rem;
@@ -477,10 +497,10 @@ header {
   display: flex;
 }
 .form {
-  width: 34.125rem;
-  height: 42.5rem;
+  width: 31.125rem;
+  height: 38.5rem;
   background: #ffffff;
-  border-radius: 3.5rem;
+  border-radius: 2.5rem;
 }
 
 .form h5,
@@ -530,7 +550,7 @@ form {
 
 #btn {
   background: #7788dd;
-  margin-top: 9.375rem;
+  margin-top: 5rem;
   width: 25.6088rem;
   height: 4.5625rem;
   box-shadow: inset 0px 0.25rem 6.375rem rgba(8, 29, 136, 0.25);
@@ -547,6 +567,13 @@ form {
 @media screen and (max-width: 320px) {
   body {
     width: 320px;
+  }
+
+  .section3,
+  .section4,
+  .section5,
+  .minisec {
+    padding-top: 1rem;
   }
 
   h2 {
@@ -589,13 +616,13 @@ form {
   }
 
   .light {
-    width: 22.6419rem;
+    width: 16.6419rem;
     height: 13.625rem;
     border-radius: 20.875rem;
     position: absolute;
     z-index: -1;
     margin-top: -16rem;
-    margin-left: -1rem;
+    margin-left: 1.5rem;
   }
 
   .text {
@@ -640,7 +667,7 @@ form {
   .background_picture {
     width: 320px;
     background: no-repeat url(/mobile/newback.png);
-    height: 2335px;
+    height: 1950px;
   }
 
   .section3 .left,
@@ -655,6 +682,7 @@ form {
 
   .arrow_left,
   .arrow_right {
+    margin-top: 4rem;
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -669,12 +697,10 @@ form {
   }
 
   .arrow_right {
-    margin-top: 3.8rem;
     margin-left: 16.5rem;
   }
 
   .arrow_left {
-    margin-top: 3.8rem;
     margin-right: 16.5rem;
   }
 
@@ -695,17 +721,20 @@ form {
   .contbox.sbox1 {
     width: 214px;
     height: 342px;
+    border-radius: 1.9rem;
+    margin-top: -2.5rem;
   }
 
-  .contbox img {
-    width: 214px;
+  .section4 .contbox img{
+    width: 13.4375rem;
     height: 174px;
   }
 
   .conetent_tab {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 4.5rem;
+    transition: 2s;
   }
 
   .section4 .contbox h3 {
@@ -721,6 +750,10 @@ form {
     margin-top: -1rem;
   }
 
+  .section4 .navbar {
+    padding-top: 1.8rem;
+  }
+
   .section5 .content {
     width: 289px;
     height: 175px;
@@ -732,14 +765,14 @@ form {
     height: 120px;
   }
 
-  .section5 .nav_effect p {
+  .section5 .nav_effecti p {
     font-weight: 400;
     font-size: 12px;
     color: black;
     cursor: pointer;
   }
 
-  .section5 .nav_effect {
+  .section5 .nav_effecti {
     width: 101px;
     height: 66px;
   }
