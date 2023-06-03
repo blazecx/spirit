@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/framework/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
 
     <title>Spirit</title>
@@ -82,14 +83,21 @@
     <div class="background_picture">
       <section class="section3">
         <h2>Галерея</h2>
-        <div class="slider">
-          <img src="/img/image 53.png" alt="" class="left" />
-          <img src="/img/image 50.png" alt="" class="center" />
-          <img src="/img/image 53.png" alt="" class="right" />
-          <img src="/img/next 2.png" alt="" class="arrow_left" />
-          <img src="/img/next 1.png" alt="" class="arrow_right" />
-        </div>
-        <div class="prog"></div>
+        <div class="wrapper">
+          <div class="swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/img/photo_for_swiper/110-3.jpg"></div>
+                  <div class="swiper-slide"><img src="/img/photo_for_swiper/1619757373_21-p-krasivaya-dvukhetazhnaya-kvartira-21.jpg"></div>
+                  <div class="swiper-slide"><img src="/img/photo_for_swiper/1626242834_21-almode_ru-p-kvartira-kholostyaka-22.jpg"></div>
+                  <div class="swiper-slide"><img src="/img/photo_for_swiper/1626928478_9-almode_ru-p-vtoroi-svet-v-kvartire-9.jpg"></div>
+                  <div class="swiper-slide"><img src="/img/photo_for_swiper/3b9b2f1fcfcfbef939b167164ae1de8c.jpeg"></div>
+                  <div class="swiper-slide"><img src="/img/photo_for_swiper/it08b26wgmx0fqs0ebrsfeex2smvj6uv.jpg"></div>
+              </div>
+              <img src="img/next 2.png" class="swiper-button-prev">
+              <img src="/img/next 1.png" class="swiper-button-next">
+          </div>
+          <script src="/framework/swiper-bundle.min.js"></script>
+          <script src="/swiper.js"></script>
       </section>
       <section class="section4">
         <h2>Инфраструктура</h2>
