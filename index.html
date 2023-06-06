@@ -341,7 +341,7 @@
             <p>Мы вам сразу перезвоним</p>
             <form>
               <input type="text" placeholder="Ваше имя" id="name" required pattern="[а-яА-Я]+" title="Только латинские буквы" /> <br />
-              <input type="tel " placeholder="Номер телефона +7 (999) 999 99-99" class="art-stranger" id="number" required />
+              <input type="tel " placeholder="Номер телефона +7 (999) 999 99-99" class="art-stranger" id="number" required minlength="10" />
               <br />
               <a href="#"
               ><input
@@ -356,6 +356,9 @@
         </div>
       </div>
     </section>
-    
+    <script src="https://unpkg.com/imask"></script>
+    <script src="/phone.js"></script>
+
+
   </body>
 </html>
