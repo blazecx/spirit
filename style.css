@@ -561,6 +561,20 @@ form {
   color: #ffffff;
 }
 
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+input:invalid::before {
+  content: "Это поле обязательно для заполнения";
+  color: red;
+  display: block;
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 320px) {
   body {
     width: 320px;

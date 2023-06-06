@@ -340,10 +340,17 @@
             <h5>Заполните форму</h5>
             <p>Мы вам сразу перезвоним</p>
             <form>
-              <input type="text" placeholder="Ваше имя" id="name" /> <br />
-              <input type="number" placeholder="Номер телефона" id="number" />
+              <input type="text" placeholder="Ваше имя" id="name" required pattern="[а-яА-Я]+" title="Только латинские буквы" /> <br />
+              <input type="tel" placeholder="Номер телефона +7 (999) 999 99-99" id="number" required />
               <br />
-              <button type="button" id="btn">Отправить</button>
+              <a href="#"
+              ><input
+                type="submit"
+                value="Отправить"
+                class="item button"
+                id="btn"
+              />
+            </a>
             </form>
           </div>
         </div>
