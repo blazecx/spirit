@@ -61,7 +61,7 @@ header {
 .section1 {
   width: 119rem;
   height: 64.25rem;
-  background: url(/img/81ded9cceb38ed3d73dfb9cbbabec2d1\ 2.png);
+  background: url(./img/81ded9cceb38ed3d73dfb9cbbabec2d1\ 2.png);
 }
 
 .light {
@@ -151,7 +151,7 @@ header {
 
 .section2 {
   height: 55.5625rem;
-  background: url(/img/section_2/sec2back.png);
+  background: url(./img/section_2/sec2back.png);
 }
 
 .section2 h2 {
@@ -213,7 +213,7 @@ header {
 }
 
 .background_picture {
-  background: url(/img/81ded9cceb38ed3d73dfb9cbbabec2d1\ 1.png);
+  background: url(./img/81ded9cceb38ed3d73dfb9cbbabec2d1\ 1.png);
   width: 119rem;
   height: 165rem;
 }
@@ -472,7 +472,7 @@ header {
 .section6 {
   width: 119rem;
   height: 55.5625rem;
-  background: url(/img/Group\ 22.png);
+  background: url(./img/Group\ 22.png);
 }
 
 .section6 h4 {
@@ -617,7 +617,7 @@ input:invalid {
     width: 20rem;
     height: 21.9375rem;
     background: none;
-    background: url(/mobile/81ded9cceb38ed3d73dfb9cbbabec2d1\ 3.png);
+    background: url(./mobile/81ded9cceb38ed3d73dfb9cbbabec2d1\ 3.png);
   }
 
   .light {
@@ -671,7 +671,7 @@ input:invalid {
 
   .background_picture {
     width: 320px;
-    background: no-repeat url(/mobile/newback.png);
+    background: no-repeat url(./mobile/newback.png);
     height: 1950px;
   }
 
