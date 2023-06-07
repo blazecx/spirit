@@ -5,11 +5,14 @@
   text-decoration: none;
 }
 
-
 body {
   background: #0c1d37;
   color: #ffffff;
   width: 119rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a,
@@ -562,7 +565,7 @@ form {
   color: #ffffff;
 }
 
-input:invalid{
+input:invalid {
   border: 1px solid red;
 }
 
