@@ -710,6 +710,10 @@ input:invalid {
     margin-top: 0;
   }
 
+  .imgItem_6 {
+    margin-top: -6rem;
+  }
+
   .textItem_6 {
     margin-top: -5rem;
   }
